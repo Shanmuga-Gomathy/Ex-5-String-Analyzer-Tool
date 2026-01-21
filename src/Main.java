@@ -2,20 +2,12 @@ import java.util.*;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
 
-class EmptyStringException extends Exception{
-    EmptyStringException(String msg){
-        super(msg);
-    }
-}
-class CustomException {
-    static void checkInput(String input) throws EmptyStringException{
-        if(input.isEmpty()){
-            throw new EmptyStringException("The string is empty");
-        }
-    }
-}
-
 public class Main {
+    private static void getVowelsCount (String name) {
+
+        long count = name.toLowerCase().chars().filter(a -> "aeiou".indexOf(a) != -1).count();
+        System.out.println("Vowels Count"+ count);
+    }
     public static void main(String[] args) {
         List<String> userList = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
@@ -49,10 +41,6 @@ public class Main {
         };
         userList.forEach(strReverse);
 
-        //5.Use Streams to filter strings with length > 5
-        System.out.println("String with length greater than 5: ");
-        userList.stream().filter(s -> s.length() > 5).forEach(System.out::println);
-
         //2.Count vowels in each string
         userList.forEach(Main::getVowelsCount);
 
@@ -66,7 +54,6 @@ public class Main {
                 if(list.contains(c)){
                     count++;
                 }
-
             }
             System.out.println("Count is: "+count);
         }*/
@@ -77,11 +64,9 @@ public class Main {
         Predicate<String> freqMoreThanOne = s -> Collections.frequency(userList,s)>1;
         userList.stream().filter(freqMoreThanOne).forEach(System.out::println);
 
-    }
-    private static void getVowelsCount (String name) {
-
-        long count = name.toLowerCase().chars().filter(a -> "aeiou".indexOf(a) != -1).count();
-        System.out.println("Vowels Count"+ count);
+        //5.Use Streams to filter strings with length > 5
+        System.out.println("String with length greater than 5: ");
+        userList.stream().filter(s -> s.length() > 5).forEach(System.out::println);
     }
 
 }
