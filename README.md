@@ -2,20 +2,17 @@
 
 (Strings + Collections + Exception Handling)
 
----
 
 ## Problem Statement
 
 Analyze a list of user-entered strings.
 
----
 
 ## Requirements
 
 - Accept multiple strings from the user  
 - Store the strings in a `List<String>`
 
----
 
 ## Operations
 
@@ -25,7 +22,6 @@ Analyze a list of user-entered strings.
 - Throw a custom exception if an empty string is entered  
 - Use Java Streams to filter strings with length greater than 5  
 
----
 
 ## Concepts Used
 
