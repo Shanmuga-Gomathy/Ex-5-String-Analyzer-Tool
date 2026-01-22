@@ -5,11 +5,11 @@ Requirements:
     Accept multiple strings from user
     Store them in List<String>
 Operations:
-    Reverse each string
-    Count vowels in each string
-    Find duplicate strings
-    Throw custom exception if empty string entered
-    Use Streams to filter strings with length > 5
+    1.Reverse each string
+    2.Count vowels in each string
+    3.Find duplicate strings
+    4.Throw custom exception if empty string entered
+    5.Use Streams to filter strings with length > 5
 Concepts Used
 ✅ Strings
 ✅ Collections
