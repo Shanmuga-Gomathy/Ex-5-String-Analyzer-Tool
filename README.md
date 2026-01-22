@@ -10,8 +10,8 @@ Operations:
     3.Find duplicate strings
     4.Throw custom exception if empty string entered
     5.Use Streams to filter strings with length > 5
-Concepts Used
-✅ Strings
-✅ Collections
-✅ Custom Exception
-✅ Java 8 Streams
+Concepts Used:
+  Strings,
+  Collections,
+  Custom Exception,
+  Java 8 Streams.
