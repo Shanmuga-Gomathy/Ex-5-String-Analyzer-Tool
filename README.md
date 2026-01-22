@@ -1,21 +1,34 @@
 # Exercise 5 – String Analyzer Tool
 
+(Strings + Collections + Exception Handling)
+
+---
+
 ## Problem Statement
-Create a Java program to analyze a list of user-entered strings.
+
+Analyze a list of user-entered strings.
+
+---
 
 ## Requirements
-- Accept multiple strings from the user
-- Store them in a `List<String>`
-- Throw a custom exception if an empty string is entered
+
+- Accept multiple strings from the user  
+- Store the strings in a `List<String>`
+
+---
 
 ## Operations
-1. Reverse each string  
-2. Count vowels in each string  
-3. Find duplicate strings  
-4. Filter strings with length greater than 5 using Java 8 Streams  
-5. Display all processed results  
+
+- Reverse each string  
+- Count vowels in each string  
+- Find duplicate strings  
+- Throw a custom exception if an empty string is entered  
+- Use Java Streams to filter strings with length greater than 5  
+
+---
 
 ## Concepts Used
+
 - Strings  
 - Collections  
 - Custom Exception  
